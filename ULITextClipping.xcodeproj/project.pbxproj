@@ -12,6 +12,10 @@
 		5559CF3D1EBA8A6400815DD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5559CF3C1EBA8A6400815DD9 /* ViewController.m */; };
 		5559CF3F1EBA8A6400815DD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5559CF3E1EBA8A6400815DD9 /* Assets.xcassets */; };
 		5559CF421EBA8A6400815DD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5559CF401EBA8A6400815DD9 /* Main.storyboard */; };
+		5559CF501EBA8AE200815DD9 /* ULIResourceFork.m in Sources */ = {isa = PBXBuildFile; fileRef = 5559CF4A1EBA8AE200815DD9 /* ULIResourceFork.m */; };
+		5559CF511EBA8AE200815DD9 /* ULIResourceForkStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 5559CF4C1EBA8AE200815DD9 /* ULIResourceForkStream.m */; };
+		5559CF521EBA8AE200815DD9 /* ULIStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 5559CF4F1EBA8AE200815DD9 /* ULIStream.m */; };
+		5559CF561EBA90DB00815DD9 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559CF551EBA90DB00815DD9 /* CoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,14 @@
 		5559CF3E1EBA8A6400815DD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5559CF411EBA8A6400815DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5559CF431EBA8A6400815DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5559CF491EBA8AE200815DD9 /* ULIResourceFork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ULIResourceFork.h; path = ULIResourceFork/ULIResourceFile/ULIResourceFork.h; sourceTree = SOURCE_ROOT; };
+		5559CF4A1EBA8AE200815DD9 /* ULIResourceFork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ULIResourceFork.m; path = ULIResourceFork/ULIResourceFile/ULIResourceFork.m; sourceTree = SOURCE_ROOT; };
+		5559CF4B1EBA8AE200815DD9 /* ULIResourceForkStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ULIResourceForkStream.h; path = ULIResourceFork/ULIResourceFile/ULIResourceForkStream.h; sourceTree = SOURCE_ROOT; };
+		5559CF4C1EBA8AE200815DD9 /* ULIResourceForkStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ULIResourceForkStream.m; path = ULIResourceFork/ULIResourceFile/ULIResourceForkStream.m; sourceTree = SOURCE_ROOT; };
+		5559CF4D1EBA8AE200815DD9 /* ULIStream_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ULIStream_Private.h; path = ULIResourceFork/ULIResourceFile/ULIStream_Private.h; sourceTree = SOURCE_ROOT; };
+		5559CF4E1EBA8AE200815DD9 /* ULIStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ULIStream.h; path = ULIResourceFork/ULIResourceFile/ULIStream.h; sourceTree = SOURCE_ROOT; };
+		5559CF4F1EBA8AE200815DD9 /* ULIStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ULIStream.m; path = ULIResourceFork/ULIResourceFile/ULIStream.m; sourceTree = SOURCE_ROOT; };
+		5559CF551EBA90DB00815DD9 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5559CF561EBA90DB00815DD9 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,7 @@
 			children = (
 				5559CF341EBA8A6400815DD9 /* ULITextClipping */,
 				5559CF331EBA8A6400815DD9 /* Products */,
+				5559CF541EBA90DB00815DD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +74,7 @@
 				5559CF361EBA8A6400815DD9 /* AppDelegate.m */,
 				5559CF3B1EBA8A6400815DD9 /* ViewController.h */,
 				5559CF3C1EBA8A6400815DD9 /* ViewController.m */,
+				5559CF531EBA8AF000815DD9 /* ULIResourceFork */,
 				5559CF3E1EBA8A6400815DD9 /* Assets.xcassets */,
 				5559CF401EBA8A6400815DD9 /* Main.storyboard */,
 				5559CF431EBA8A6400815DD9 /* Info.plist */,
@@ -74,6 +89,28 @@
 				5559CF391EBA8A6400815DD9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5559CF531EBA8AF000815DD9 /* ULIResourceFork */ = {
+			isa = PBXGroup;
+			children = (
+				5559CF491EBA8AE200815DD9 /* ULIResourceFork.h */,
+				5559CF4A1EBA8AE200815DD9 /* ULIResourceFork.m */,
+				5559CF4B1EBA8AE200815DD9 /* ULIResourceForkStream.h */,
+				5559CF4C1EBA8AE200815DD9 /* ULIResourceForkStream.m */,
+				5559CF4D1EBA8AE200815DD9 /* ULIStream_Private.h */,
+				5559CF4E1EBA8AE200815DD9 /* ULIStream.h */,
+				5559CF4F1EBA8AE200815DD9 /* ULIStream.m */,
+			);
+			name = ULIResourceFork;
+			sourceTree = "<group>";
+		};
+		5559CF541EBA90DB00815DD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5559CF551EBA90DB00815DD9 /* CoreServices.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5559CF511EBA8AE200815DD9 /* ULIResourceForkStream.m in Sources */,
+				5559CF501EBA8AE200815DD9 /* ULIResourceFork.m in Sources */,
+				5559CF521EBA8AE200815DD9 /* ULIStream.m in Sources */,
 				5559CF3D1EBA8A6400815DD9 /* ViewController.m in Sources */,
 				5559CF3A1EBA8A6400815DD9 /* main.m in Sources */,
 				5559CF371EBA8A6400815DD9 /* AppDelegate.m in Sources */,
