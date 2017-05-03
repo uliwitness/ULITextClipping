@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3FCFB6D24AFBCB2061EA1B0F31CD91F4E537D590",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3FCFB6D24AFBCB2061EA1B0F31CD91F4E537D590" : 9223372036854775807,
+    "2A765E92FFC52A83D82215DF09D23E92E4A9AAB0" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B4945D5B-3071-4DB4-BB63-4A29978DFD53",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3FCFB6D24AFBCB2061EA1B0F31CD91F4E537D590" : "ULITextClipping\/",
+    "2A765E92FFC52A83D82215DF09D23E92E4A9AAB0" : "ULITextClipping\/ULIResourceFork\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ULITextClipping",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ULITextClipping.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/uliwitness\/ULIResourceFork.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2A765E92FFC52A83D82215DF09D23E92E4A9AAB0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/uliwitness\/ULITextClipping.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3FCFB6D24AFBCB2061EA1B0F31CD91F4E537D590"
+    }
+  ]
+}

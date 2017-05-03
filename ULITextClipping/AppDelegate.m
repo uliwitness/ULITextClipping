@@ -31,11 +31,8 @@
 	for( NSString * currTypeStr in fork.resourceTypes )
 	{
 		ULIResourceType * currType = fork.resourceTypes[currTypeStr];
-		if( [currTypeStr isEqualToString: @"TEXT"] )
-		{
-			[syntheticUTIsDict setObject: currType.resources.firstObject.resourceData forKey: @"com.apple.traditional-mac-plain-text"];
-		}
-		else if( [currTypeStr isEqualToString: @"utf8"] )
+		NSString * utiForType = CFBridgingRelease( UTTypeCreatePreferredIdentifierForTag( kUTTagClassOSType, (__bridge CFStringRef)currTypeStr, NULL ) );
+		if( [currTypeStr isEqualToString: @"utf8"] )
 		{
 			NSString * plainText = [[NSString alloc] initWithData: currType.resources.firstObject.resourceData encoding: NSUTF8StringEncoding];
 			[syntheticUTIsDict setObject: plainText forKey: @"public.utf8-plain-text"];
@@ -45,15 +42,11 @@
 			NSString * plainText = [[NSString alloc] initWithData: currType.resources.firstObject.resourceData encoding: NSUTF8StringEncoding];
 			[syntheticUTIsDict setObject: plainText forKey: @"public.rtf"];
 		}
-		else if( [currTypeStr isEqualToString: @"ut16"] )
+		else if( utiForType != nil && ![utiForType hasPrefix: @"dyn."] )	// Found a UTI? Move it into UTI-Data dict.
 		{
-			[syntheticUTIsDict setObject: currType.resources.firstObject.resourceData forKey: @"public.utf16-external-plain-text"];
+			[syntheticUTIsDict setObject: currType.resources.firstObject.resourceData forKey: utiForType];
 		}
-		else if( [currTypeStr isEqualToString: @"utxt"] )
-		{
-			[syntheticUTIsDict setObject: currType.resources.firstObject.resourceData forKey: @"public.utf16-plain-text"];
-		}
-		else
+		else	// Legacy type without UTI? Stick the data in the OSType-Data dict.
 		{
 			[syntheticOSTypesDict setObject: currType.resources.firstObject.resourceData forKey: currType.resources.firstObject.resourceType];
 		}
