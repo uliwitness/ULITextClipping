@@ -16,6 +16,7 @@
 		5559CF511EBA8AE200815DD9 /* ULIResourceForkStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 5559CF4C1EBA8AE200815DD9 /* ULIResourceForkStream.m */; };
 		5559CF521EBA8AE200815DD9 /* ULIStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 5559CF4F1EBA8AE200815DD9 /* ULIStream.m */; };
 		5559CF561EBA90DB00815DD9 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559CF551EBA90DB00815DD9 /* CoreServices.framework */; };
+		55D513C51EBBEB0A0089F5E6 /* NSString+ULIClippingFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D513C41EBBEB0A0089F5E6 /* NSString+ULIClippingFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		5559CF4E1EBA8AE200815DD9 /* ULIStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ULIStream.h; path = ULIResourceFork/ULIResourceFile/ULIStream.h; sourceTree = SOURCE_ROOT; };
 		5559CF4F1EBA8AE200815DD9 /* ULIStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ULIStream.m; path = ULIResourceFork/ULIResourceFile/ULIStream.m; sourceTree = SOURCE_ROOT; };
 		5559CF551EBA90DB00815DD9 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		55D513C31EBBEB0A0089F5E6 /* NSString+ULIClippingFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ULIClippingFile.h"; sourceTree = "<group>"; };
+		55D513C41EBBEB0A0089F5E6 /* NSString+ULIClippingFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ULIClippingFile.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 				5559CF361EBA8A6400815DD9 /* AppDelegate.m */,
 				5559CF3B1EBA8A6400815DD9 /* ViewController.h */,
 				5559CF3C1EBA8A6400815DD9 /* ViewController.m */,
+				55D513C31EBBEB0A0089F5E6 /* NSString+ULIClippingFile.h */,
+				55D513C41EBBEB0A0089F5E6 /* NSString+ULIClippingFile.m */,
 				5559CF531EBA8AF000815DD9 /* ULIResourceFork */,
 				5559CF3E1EBA8A6400815DD9 /* Assets.xcassets */,
 				5559CF401EBA8A6400815DD9 /* Main.storyboard */,
@@ -185,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5559CF511EBA8AE200815DD9 /* ULIResourceForkStream.m in Sources */,
+				55D513C51EBBEB0A0089F5E6 /* NSString+ULIClippingFile.m in Sources */,
 				5559CF501EBA8AE200815DD9 /* ULIResourceFork.m in Sources */,
 				5559CF521EBA8AE200815DD9 /* ULIStream.m in Sources */,
 				5559CF3D1EBA8A6400815DD9 /* ViewController.m in Sources */,
@@ -341,6 +347,7 @@
 				5559CF481EBA8A6400815DD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

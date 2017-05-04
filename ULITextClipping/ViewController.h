@@ -10,6 +10,11 @@
 
 @interface ViewController : NSViewController
 
+@property IBOutlet NSPathControl * pathControl;
+@property IBOutlet NSTextView * textView;
+
+-(IBAction) chooseFile: (id)sender;
+-(IBAction) updateTextView: (id)sender;
 
 @end
 

@@ -7,21 +7,31 @@
 //
 
 #import "ViewController.h"
+#import "NSString+ULIClippingFile.h"
+
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-	[super viewDidLoad];
-
-	// Do any additional setup after loading the view.
+-(IBAction) chooseFile: (id)sender
+{
+	NSOpenPanel * filePicker = [NSOpenPanel openPanel];
+	[filePicker beginSheetModalForWindow: self.view.window completionHandler: ^(NSInteger result)
+	{
+		if( result == NSFileHandlingPanelOKButton )
+		{
+			[self.pathControl setURL: filePicker.URL];
+			[self updateTextView: self];
+		}
+	}];
 }
 
 
-- (void)setRepresentedObject:(id)representedObject {
-	[super setRepresentedObject:representedObject];
-
-	// Update the view, if already loaded.
+-(IBAction) updateTextView: (id)sender
+{
+	NSAttributedString * attrStr = [NSAttributedString attributedStringWithContentsOfClippingFileURL: self.pathControl.URL];
+	if( !attrStr )
+		attrStr = [[NSAttributedString alloc] initWithString: @"" attributes: @{}];
+	[self.textView.textStorage setAttributedString: attrStr];
 }
-
 
 @end
