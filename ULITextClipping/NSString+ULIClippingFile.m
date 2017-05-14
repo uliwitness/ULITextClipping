@@ -74,7 +74,7 @@ NSDictionary * ULIClippingDictionaryFromFileURL( NSURL * inClippingURL )
 				NSString * plainText = [[NSString alloc] initWithData: currType.resources.firstObject.resourceData encoding: NSUTF8StringEncoding];
 				[syntheticUTIsDict setObject: plainText forKey: @"public.rtf"];
 			}
-			else if( utiForType != nil && ![utiForType hasPrefix: @"dyn."] )	// Found a UTI? Move it into UTI-Data dict.
+			else if( utiForType != nil && !UTTypeIsDynamic((__bridge CFStringRef _Nonnull)utiForType) )	// Found a UTI? Move it into UTI-Data dict.
 			{
 				[syntheticUTIsDict setObject: currType.resources.firstObject.resourceData forKey: utiForType];
 			}
